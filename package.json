@@ -5,9 +5,9 @@
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstallAll": "install --save-dev html-webpack-plugin",
-    "installAll": "install --save-dev style-loader css-loader",
-    "postinstallAll": "install --save-dev webpack-dev-server",
+    "preinstallAll": "npx install --save-dev html-webpack-plugin",
+    "installAll": "npx install --save-dev style-loader css-loader",
+    "postinstallAll": "npx install --save-dev webpack-dev-server",
     "dev": "webpack serve",
     "build": "webpack",
     "format": "prettier . --write src/"
@@ -17,12 +17,15 @@
   "private": "true",
   "devDependencies": {
     "@eslint/js": "^9.17.0",
+    "css-loader": "^7.1.2",
     "eslint": "^9.17.0",
     "eslint-plugin-react": "^7.37.3",
     "globals": "^15.14.0",
     "html-webpack-plugin": "^5.6.3",
     "prettier": "3.4.2",
+    "style-loader": "^4.0.0",
     "webpack": "^5.97.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.0"
   }
 }
